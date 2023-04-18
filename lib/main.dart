@@ -20,25 +20,40 @@ class paginainicial extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Titulo do App"),
-          backgroundColor: Colors.purple,
+          title: Text("Olá meu app"),
+          backgroundColor: Color.fromARGB(249, 241, 31, 31),
         ),
-        body: Container(
-          color: Colors.pink,
-          alignment: Alignment.center,
-          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            ElevatedButton(
-              onPressed: () {},
-              child: Text("CLIQUE AQUI",
-                  style: TextStyle(
-                    fontSize: 30,
-                  )),
-            ),
-            ElevatedButton(
-              onPressed: () {},
-              child: Text("CLIQUE AQUI"),
+        drawer: Drawer(
+          child:Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text("Menu"),
+              ElevatedButton(
+                onPressed:(){},
+                child: Text("Botão"),
+              ),
+            ],
+          ),
+        ),
+        floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.send),
+        onPressed: () {},
+        ),
+        body: Container(alignment: Alignment.center,
+        child: ListView(
+        children: [
+          Container(
+            alignment: Alignment.center,
+            child: IconButton(
+          onPressed: () {},
+icon: Icon(Icons.login),
+iconSize: 50,
+color: Colors.blue,
             )
-          ]),
-        ));
+          )
+        ],
+        )
+        )
+        );
   }
 }
