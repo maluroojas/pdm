@@ -1,4 +1,7 @@
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables, avoid_print
+
 import 'package:flutter/material.dart';
+import 'package:miau/pagina_inicial.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,51 +12,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: paginainicial());
+    return MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: Paginainicial()
+    );
   }
 }
 
-class paginainicial extends StatelessWidget {
-  const paginainicial({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text("Olá meu app"),
-          backgroundColor: Color.fromARGB(249, 241, 31, 31),
-        ),
-        drawer: Drawer(
-          child:Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text("Menu"),
-              ElevatedButton(
-                onPressed:(){},
-                child: Text("Botão"),
-              ),
-            ],
-          ),
-        ),
-        floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.send),
-        onPressed: () {},
-        ),
-        body: Container(alignment: Alignment.center,
-        child: ListView(
-        children: [
-          Container(
-            alignment: Alignment.center,
-            child: IconButton(
-          onPressed: () {},
-icon: Icon(Icons.login),
-iconSize: 50,
-color: Colors.blue,
-            )
-          )
-        ],
-        )
-        )
-        );
-  }
-}
