@@ -7,10 +7,9 @@ class Conversas extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        alignment: Alignment.center,
-        child: ListView(
+    return ListView(
           children: [
+            // ignore: duplicate_ignore
             ListTile(
               onTap:() {
               print("A convera foi clicada");
@@ -18,10 +17,10 @@ class Conversas extends StatelessWidget {
               // ignore: prefer_const_constructors
               leading: CircleAvatar(
                 backgroundImage: NetworkImage(
-                    "https://images.unsplash.com/photo-1572590407445-ac6252f1a5b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"),
+                    ""),
               ),
-              title: Text("gatinho"),
-              subtitle: Text("miau"),
+              title: Text("amor"),
+              subtitle: Text("eu te amo"),
               trailing: Text("11:34"),
             ),
             ListTile(
@@ -30,7 +29,7 @@ class Conversas extends StatelessWidget {
               },
               leading: CircleAvatar(
                 backgroundImage: NetworkImage(
-                    "https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"),
+                    "https://i.pinimg.com/564x/65/c9/b6/65c9b6dd6669c488658b9b132523c8a9.jpg"),
               ),
               title: Text("cachorro"),
               subtitle: Text("au au"),
@@ -49,8 +48,6 @@ class Conversas extends StatelessWidget {
               trailing: Text("07:48"),
             ),
           ],
-        ),
-      );
-
+        );
   }
 }
