@@ -36,6 +36,7 @@ class Status extends StatelessWidget {
               color: Color.fromARGB(255, 51, 156, 54),
               ),
               ),
+              SizedBox(width: 8,),
               Icon(Icons.verified,
               size: 18,
               color: Colors.green,
@@ -49,9 +50,9 @@ class Status extends StatelessWidget {
               },
               leading: CircleAvatar(
                 backgroundImage: NetworkImage(
-                    "https://i.pinimg.com/564x/cb/00/b1/cb00b14998c9e758f62cd8574f37181a.jpg"),
+                    ""),
               ),
-              title: Text("sara"),
+              title: Text("fulano"),
               subtitle: Text("Há 2 minutos"),
               ),
             ListTile(
@@ -60,9 +61,9 @@ class Status extends StatelessWidget {
               },
               leading: CircleAvatar(
                 backgroundImage: NetworkImage(
-                    "https://i.pinimg.com/564x/7d/d4/64/7dd464007ed71916d4259ba4a972db87.jpg"),
+                    ""),
               ),
-              title: Text("julia"),
+              title: Text("usuario"),
               subtitle: Text("Há 4 minutos"),
             ),
             ListTile(
@@ -71,9 +72,9 @@ class Status extends StatelessWidget {
               },
               leading: CircleAvatar(
                 backgroundImage: NetworkImage(
-                    "https://i.pinimg.com/564x/f1/89/d6/f189d63a2849a83f6d8ff8e17578fc9b.jpg"),
+                    ""),
               ),
-              title: Text("pedro"),
+              title: Text("ciclano"),
               subtitle: Text("Hoje 08:28"),
             ),
           ],
