@@ -12,6 +12,7 @@ class Conversas extends StatelessWidget {
         // ignore: duplicate_ignore
         ListTile(
           onTap: () {
+            Navigator.pushNamed(context, '/conversa');
             print("A convera foi clicada");
           },
           // ignore: prefer_const_constructors
@@ -36,6 +37,7 @@ class Conversas extends StatelessWidget {
         ),
         ListTile(
           onTap: () {
+            Navigator.pushNamed(context, '/conversa');
             print("A convera foi clicada");
           },
           leading: CircleAvatar(
@@ -56,18 +58,18 @@ class Conversas extends StatelessWidget {
                 backgroundColor: Colors.green,
                 radius: 12,
                 child: Text("2",
-                style:TextStyle(
-                color: Colors.white,
-                fontSize: 12,
-                fontWeight: FontWeight.bold,
-                )
-                ),
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold,
+                    )),
               ),
             ],
           ),
         ),
         ListTile(
           onTap: () {
+            Navigator.pushNamed(context, '/conversa');
             print("A convera foi clicada");
           },
           leading: CircleAvatar(

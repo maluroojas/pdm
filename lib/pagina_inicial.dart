@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last, avoid_print, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:miau/conversa.dart';
 import 'conversas.dart';
 import 'status.dart';
 import 'chamadas.dart';
@@ -18,19 +19,34 @@ class Paginainicial extends StatelessWidget {
         backgroundColor: Color.fromARGB (255, 56, 127, 107),
         actions: [
           IconButton(
-            onPressed: () {
-              print("O botão da camera foi clicado");
-            },
+            onPressed: () {},
             icon: Icon(Icons.camera_alt_outlined),
           ),
           IconButton(
-            onPressed: () {
-              print("O botão da busca foi clicado");},
+            onPressed: () {},
             icon: Icon(Icons.search),
           ),
-          IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.more_vert),
+          PopupMenuButton(
+
+            onSelected: (item) {
+              if (item == 3) {
+                Navigator.pushNamed(context, '/conversa');
+              } 
+            },
+            itemBuilder: (context) => [
+              PopupMenuItem(
+                value: 1,
+                child: Text('Novo grupo'),
+              ),
+              PopupMenuItem(
+                value: 2,
+                child: Text('Nova transmissão'),
+              ),
+              PopupMenuItem(
+                value: 3,
+                child: Text('Configurações'),
+              ),
+            ],
           ),
         ],
         bottom: TabBar(
