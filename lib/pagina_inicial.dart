@@ -1,7 +1,7 @@
-// ignore_for_file: prefer_const_constructors, sort_child_properties_last, avoid_print, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last, avoid_print, prefer_const_literals_to_create_immutables, unused_import, duplicate_import
 
 import 'package:flutter/material.dart';
-import 'package:miau/conversa.dart';
+import 'package:miau/configuracoes.dart';
 import 'conversas.dart';
 import 'status.dart';
 import 'chamadas.dart';
@@ -30,7 +30,7 @@ class Paginainicial extends StatelessWidget {
 
             onSelected: (item) {
               if (item == 3) {
-                Navigator.pushNamed(context, '/conversa');
+                Navigator.pushNamed(context, '/config');
               } 
             },
             itemBuilder: (context) => [
