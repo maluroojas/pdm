@@ -1,6 +1,6 @@
 # miau
 
-A new Flutter project.
+Aulas da matéria de Programação p/ Dispositivos móveis
 
 ## Getting Started
 
